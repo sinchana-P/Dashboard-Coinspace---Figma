@@ -1,4 +1,3 @@
-import React from 'react'
 import { Layout, Space, Card, Select, Button, Divider, Row, Col } from 'antd'
 import { GiRingingBell  } from "react-icons/gi";
 import { FaBitcoin } from "react-icons/fa";

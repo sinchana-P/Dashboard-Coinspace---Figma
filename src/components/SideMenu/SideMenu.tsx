@@ -22,7 +22,8 @@ export const SideMenu = () => {
   return (
         <Sider 
           className='Sider-container'
-          theme="dark"
+          // theme="light"
+          style={{ backgroundColor: "#001529" }}
         >   
 
           <div className='logo-container'>
@@ -37,7 +38,8 @@ export const SideMenu = () => {
 
             <Menu
               mode="inline"
-              theme="dark"
+              // theme="dark"
+              style={{ backgroundColor: "#001529" }}
               items = {[
                 {
                   label: "Dashboard",
@@ -70,7 +72,8 @@ export const SideMenu = () => {
 
             <Menu
               mode='inline'
-              theme="dark"
+              // theme="dark"
+              style={{ backgroundColor: "#001529" }}
               items = {[
                 {
                   label: "Transactions",
@@ -134,7 +137,8 @@ export const SideMenu = () => {
               <h1>Account</h1>
               <Menu
               mode='inline'
-              theme='dark'
+              // theme='dark'
+              style={{ backgroundColor: "#001529" }}
                 items = {[
                   {
                     label: "Notification",
@@ -162,7 +166,8 @@ export const SideMenu = () => {
             <Divider className='divider'/>
               <Menu
                 mode='inline'
-                theme='dark'
+                // theme='dark'
+                style={{ backgroundColor: "#001529" }}
                 items = {[
                   {
                     key: "logout",
