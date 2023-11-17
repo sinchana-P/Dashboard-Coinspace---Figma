@@ -1,0 +1,28 @@
+.bottom-section-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 20px;
+}
+.history-container {
+  max-width: 551px;
+  max-height: 268px;
+  overflow: auto;
+}
+.latest-activities-container {
+  overflow: auto;
+}
+.activities-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.each-activity {
+  align-self: center;
+  justify-self: center;
+  padding: 10px 15px;
+  color: #b3b2b2;
+}
+.each-activity:nth-of-type(1) {
+  color: black;
+  border-bottom: 2px solid blue;
+}

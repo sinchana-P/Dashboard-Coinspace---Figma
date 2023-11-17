@@ -1,0 +1,11 @@
+.header-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 1223px;
+  max-height: 70px;
+}
+.header-icons {
+  margin: 0 7px;
+  justify-self: center;
+}
