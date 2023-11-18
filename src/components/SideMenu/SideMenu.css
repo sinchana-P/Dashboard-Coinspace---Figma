@@ -2,16 +2,24 @@
   color: white;
   max-width: 218px;
   max-height: 1024px;
-  background-color: rgb(229, 170, 51);
+  background-color: pink;
 }
 .logo-container {
   display: flex;
   padding: 10px;
   align-items: center;
   justify-content: center;
+  background-color: #1F263E;
 }
-.logo-container h1 {
+.logout-menu {
+  background-color: #1F263E;
+  color: #FFFFFF;
+}
+.logo-container h3 {
   margin: 10px;
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 3px;
 }
 .divider {
   margin: 0;
@@ -21,13 +29,38 @@
 }
 .quick-access-container {
   padding-top: 10px;
+  background-color: #1F263E;
+}
+.quick-access-menu {
+  background-color: #1F263E;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.quick-access-menu:hover {
+  color: #FFFFFF;
 }
 .service-container,
 .account-container {
   padding-top: 20px;
+  background-color: #1F263E;
+}
+.service-menu {
+  background-color: #1F263E;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: lighter;
+}
+.account-menu {
+  background-color: #1F263E;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: lighter;
 }
 .logout-container {
   /* display: flex; */
-  margin-top: 60px;
   margin-bottom: 10px;
+}
+.logout-menu {
+  padding-top: 60px;
 }

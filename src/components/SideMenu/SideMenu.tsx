@@ -1,7 +1,7 @@
-import React from 'react'
+import { useState } from 'react'
 import Sider from 'antd/es/layout/Sider'
 
-import { Divider, Menu } from 'antd'
+import { Divider, Menu, Switch } from 'antd'
 import { AiFillHome } from "react-icons/ai";
 import { RiExchangeFill } from "react-icons/ri";
 import { SlWallet } from "react-icons/sl";
@@ -15,20 +15,28 @@ import { IoSettingsOutline } from "react-icons/io5";
 import { TbTriangleSquareCircleFilled } from "react-icons/tb";
 import { FaPowerOff } from "react-icons/fa6";
 
+import type { MenuTheme } from 'antd';
 
 import './SideMenu.css'
 
 export const SideMenu = () => {
+  const [theme, setTheme] = useState<MenuTheme>('dark');
+  console.log("Sidemenu")
+  
+  const changeTheme = (value: boolean) => {
+    setTheme(value ? 'dark' : 'light');
+  };
+
+  
   return (
         <Sider 
-          className='Sider-container'
+          className='sider-container'
           // theme="light"
-          style={{ backgroundColor: "#001529" }}
+          // style={{ backgroundColor: "#001529" }}
         >   
-
           <div className='logo-container'>
             <TbTriangleSquareCircleFilled size={22} color={"#6487EC"} />
-            <h1>COINSPACE</h1>
+            <h3>COINSPACE</h3>
           </div>
 
           <Divider className='divider'/>
@@ -36,10 +44,19 @@ export const SideMenu = () => {
           <div className='quick-access-container'>
             <h1>Quick Access</h1>
 
+            <Switch 
+              checked={theme === 'dark'}   // to set default value
+              onChange={changeTheme}
+              checkedChildren="Dark"
+              unCheckedChildren="Light"
+            />
+
             <Menu
               mode="inline"
               // theme="dark"
-              style={{ backgroundColor: "#001529" }}
+              className='quick-access-menu'
+              // style = {{ width: 200 }}
+              // style={{ backgroundColor: "#001529" }}
               items = {[
                 {
                   label: "Dashboard",
@@ -69,11 +86,12 @@ export const SideMenu = () => {
 
           <div className='service-container'>
             <h1>Service</h1>
-
+            
             <Menu
               mode='inline'
               // theme="dark"
-              style={{ backgroundColor: "#001529" }}
+              className='service-menu'
+              // style={{ backgroundColor: "#001529" }}
               items = {[
                 {
                   label: "Transactions",
@@ -132,13 +150,16 @@ export const SideMenu = () => {
               ]}
             >
             </Menu>
+   
+          </div>
 
-            <div className='account-container'>
+          <div className='account-container'>
               <h1>Account</h1>
               <Menu
               mode='inline'
               // theme='dark'
-              style={{ backgroundColor: "#001529" }}
+              className='account-menu'
+              // style={{ backgroundColor: "#001529" }}
                 items = {[
                   {
                     label: "Notification",
@@ -159,30 +180,27 @@ export const SideMenu = () => {
                 ]}
               >
               </Menu>
-            </div>
-
-
-            <div className='logout-container'>
-            <Divider className='divider'/>
-              <Menu
-                mode='inline'
-                // theme='dark'
-                style={{ backgroundColor: "#001529" }}
-                items = {[
-                  {
-                    key: "logout",
-                    label: "Log Out",
-                    icon: <FaPowerOff />
-                  }
-                ]}
-              >
-              </Menu>
-              
-            </div>    
           </div>
+
+          <div className='logout-container'>
+          <Divider className='divider'/>
+            <Menu
+              mode='inline'
+              // theme='dark'
+              className='logout-menu'
+              // style={{ backgroundColor: "#001529" }}
+              items = {[
+                {
+                  key: "logout",
+                  label: "Log Out",
+                  icon: <FaPowerOff />
+                }
+              ]}
+            >
+            </Menu>
+            
+          </div> 
           
-
-
         </Sider>
     
   )
