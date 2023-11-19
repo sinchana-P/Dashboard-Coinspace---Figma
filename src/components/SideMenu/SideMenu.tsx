@@ -20,12 +20,12 @@ import type { MenuTheme } from 'antd';
 import './SideMenu.css'
 
 export const SideMenu = () => {
-  const [theme, setTheme] = useState<MenuTheme>('dark');
+  // const [theme, setTheme] = useState<MenuTheme>('dark');
   console.log("Sidemenu")
   
-  const changeTheme = (value: boolean) => {
-    setTheme(value ? 'dark' : 'light');
-  };
+  // const changeTheme = (value: boolean) => {
+  //   setTheme(value ? 'dark' : 'light');
+  // };
 
   
   return (
@@ -42,14 +42,14 @@ export const SideMenu = () => {
           <Divider className='divider'/>
 
           <div className='quick-access-container'>
-            <h1>Quick Access</h1>
+            <h2>Quick Access</h2>
 
-            <Switch 
+            {/* <Switch 
               checked={theme === 'dark'}   // to set default value
               onChange={changeTheme}
               checkedChildren="Dark"
               unCheckedChildren="Light"
-            />
+            /> */}
 
             <Menu
               mode="inline"
@@ -85,7 +85,7 @@ export const SideMenu = () => {
           </div>
 
           <div className='service-container'>
-            <h1>Service</h1>
+            <h2>Service</h2>
             
             <Menu
               mode='inline'
@@ -95,8 +95,9 @@ export const SideMenu = () => {
               items = {[
                 {
                   label: "Transactions",
+                  tag: 3,
                   key:"transactions",
-                  icon: <BsBank2 /> ,
+                  icon: <BsBank2 size={21}/> ,                  
                   children: [
                     {
                       label: "Buy & Sell Coin",
@@ -127,7 +128,7 @@ export const SideMenu = () => {
                 {
                   label: "Rewards",
                   key: "rewards",
-                  icon: <FaGift />,
+                  icon: <FaGift size={21}/>,
                   children: [
                     {
                       label: "Rewards",
@@ -138,7 +139,7 @@ export const SideMenu = () => {
                 {
                   label: "Utility Plan",
                   key: "utilityplan",
-                  icon: <TbBulb />,
+                  icon: <TbBulb size={21}/>,
                   children: [
                     {
                       key: "plan",
@@ -154,7 +155,7 @@ export const SideMenu = () => {
           </div>
 
           <div className='account-container'>
-              <h1>Account</h1>
+              <h2>Account</h2>
               <Menu
               mode='inline'
               // theme='dark'
@@ -164,18 +165,18 @@ export const SideMenu = () => {
                   {
                     label: "Notification",
                     key: "notification",
-                    icon: <HiOutlineSpeakerphone />
+                    icon: <HiOutlineSpeakerphone size={21} />
                   },
                   {
                     label: "Settings",
                     key: "settings",
-                    icon: <IoSettingsOutline />
+                    icon: <IoSettingsOutline size={21}/>
                     ,
                   },
                   {
                     label: "FAQ",
                     key: "faq",
-                    icon: <FaRegQuestionCircle />
+                    icon: <FaRegQuestionCircle size={21}/>
                   }
                 ]}
               >
@@ -193,7 +194,8 @@ export const SideMenu = () => {
                 {
                   key: "logout",
                   label: "Log Out",
-                  icon: <FaPowerOff />
+                  // icon: <FaPowerOff size={21} style={{ strokeWidth: 1, stroke: 'black', fill: 'none' }} />
+                  icon: <FaPowerOff size={21} />
                 }
               ]}
             >
