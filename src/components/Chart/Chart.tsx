@@ -159,7 +159,7 @@ export const Chart = () => {
 
                   <div className='market-cap-div'>
                     <div className='market-cap-div-left'>
-                      <FaBitcoin size={18} style={{ color: "white", backgroundColor: "#2F344B", width: "28px", height: "28px", borderRadius: "50%", padding: "6px" }} />
+                      <FaBitcoin size={18} style={{ color: "white", backgroundColor: "#5D8BAD", width: "28px", height: "28px", borderRadius: "50%", padding: "6px" }} />
                       <h2>FCT</h2>
                     </div>               
                     <div className='market-cap-div-right'>
@@ -170,7 +170,7 @@ export const Chart = () => {
 
                   <div className='market-cap-div'>
                     <div className='market-cap-div-left'>
-                      <FaBitcoin size={18} style={{ color: "white", backgroundColor: "#04167B", width: "28px", height: "28px", borderRadius: "50%", padding: "6px" }} />
+                      <FaBitcoin size={18} style={{ color: "white", backgroundColor: "#08316A", width: "28px", height: "28px", borderRadius: "50%", padding: "6px" }} />
                       <h2>LSK</h2>
                     </div>               
                     <div className='market-cap-div-right'>
