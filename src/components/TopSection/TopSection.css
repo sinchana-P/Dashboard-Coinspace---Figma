@@ -70,6 +70,12 @@
   max-height: 140px;
   overflow: auto;
 }
+.card-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .top-card-each-col {
   margin-right: 5px;
   align-self: center;
