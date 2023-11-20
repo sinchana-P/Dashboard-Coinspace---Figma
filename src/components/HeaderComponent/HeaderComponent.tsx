@@ -12,28 +12,29 @@ export const HeaderComponent = () => {
     <Card>
       <div className="header-container">
         <div className='header-container-left'>
-          <div>
-            <BsFilterRight size={21} className="header-icons" />
+          <div className="header-icons">
+            <BsFilterRight size={21}  />
           </div>
-          <div>
-            <IoCubeOutline size={21} className="header-icons" />
+          <div className="header-icons">
+            <IoCubeOutline size={21}  />
           </div>
-          <div>
+          <div className="header-icons">
             <Input size="small" placeholder="search" prefix={<CiSearch />} />
           </div>       
         </div>
+
         <div className='header-container-right'>
-          <div>
-            <Avatar src="https://th.bing.com/th/id/OIP.4oYqJqInuQd2TAlPPdggLgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7" className="header-icons" />
+          <div className="header-icons">
+            <Avatar src="https://th.bing.com/th/id/OIP.4oYqJqInuQd2TAlPPdggLgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7"  />
           </div>
-          <div>
-            <IoSettingsOutline size={21} className="header-icons" />
+          <div className="header-icons">
+            <IoSettingsOutline size={21}  />
           </div>
-          <div>
-            <HiOutlineSpeakerphone size={21} className="header-icons" />
+          <div className="header-icons">
+            <HiOutlineSpeakerphone size={21}  />
           </div>
-          <div>
-            <Avatar src="https://th.bing.com/th/id/OIP.-UhCusNp-fNE_DruwEZkXwHaF3?pid=ImgDet&rs=1" className="header-icons" />
+          <div className="header-icons">
+            <Avatar src="https://th.bing.com/th/id/OIP.-UhCusNp-fNE_DruwEZkXwHaF3?pid=ImgDet&rs=1"  />
           </div>     
         </div>
       </div>
