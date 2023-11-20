@@ -1,5 +1,5 @@
 import React from 'react'
-import { Card, Input, Avatar } from 'antd'
+import { Card, Input, Avatar, Badge } from 'antd'
 import { BsFilterRight } from "react-icons/bs";
 import { IoCubeOutline } from "react-icons/io5";
 import { IoSettingsOutline } from "react-icons/io5";
@@ -25,13 +25,15 @@ export const HeaderComponent = () => {
 
         <div className='header-container-right'>
           <div className="header-icons">
-            <Avatar src="https://th.bing.com/th/id/OIP.4oYqJqInuQd2TAlPPdggLgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7"  />
+            <Avatar src="https://th.bing.com/th/id/OIP.4oYqJqInuQd2TAlPPdggLgHaHa?w=211&h=211&c=7&r=0&o=5&dpr=1.1&pid=1.7" />
           </div>
           <div className="header-icons">
-            <IoSettingsOutline size={21}  />
+            <IoSettingsOutline size={24} />
           </div>
           <div className="header-icons">
-            <HiOutlineSpeakerphone size={21}  />
+            <Badge count={5} color='#F56C89'>
+              <HiOutlineSpeakerphone size={24} badge={{ count: 5 }} />
+            </Badge>
           </div>
           <div className="header-icons">
             <Avatar src="https://th.bing.com/th/id/OIP.-UhCusNp-fNE_DruwEZkXwHaF3?pid=ImgDet&rs=1"  />
