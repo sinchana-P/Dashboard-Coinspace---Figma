@@ -11,7 +11,7 @@ export const ContentSection = () => {
   return (
     <Content className='content' >
       <HeaderComponent />
-      <div className='right-container'>
+      <div className='right-container' style={{ backgroundColor: "#f3f0fa" }}>
         <TopSection />
         <Chart />
         <div className='bottom-section-container'>

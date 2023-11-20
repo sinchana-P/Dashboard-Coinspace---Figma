@@ -74,8 +74,9 @@ export const History = () => {
 
 
   return (
-    <Card className='history-container'>
-      <div>
+    <div className='history-container-main'>
+      <Card>
+      <div className='history-container'>
         <h2>Latest Activities</h2>
         <div className='activities-list'>
           <List.Item className='each-activity'>ALL</List.Item>
@@ -101,6 +102,7 @@ export const History = () => {
         />
       </div>
     </Card>
+    </div>
   )
 }
 
