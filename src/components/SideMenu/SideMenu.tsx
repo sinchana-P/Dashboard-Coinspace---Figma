@@ -51,136 +51,142 @@ export const SideMenu = () => {
               unCheckedChildren="Light"
             /> */}
 
-            <Menu
-              mode="inline"
-              // theme="dark"
-              className='quick-access-menu'
-              // style = {{ width: 200 }}
-              // style={{ backgroundColor: "#001529" }}
-              items = {[
-                {
-                  label: "Dashboard",
-                  key:"dashboard",
-                  icon: <AiFillHome size={21} />
-                },
-                {
-                  label: "Exchange",
-                  key:"exchange",
-                  icon: <RiExchangeFill size={21} />
-                },
-                {
-                  label: "My Wallet",
-                  key:"mywallet",
-                  icon: <SlWallet size={21} />
-                },
-                {
-                  label: "Tradeview",
-                  key:"tradeview",
-                  icon: <BsGraphUpArrow size={21} />
-                },
-              ]}
-            >
+            <div className='quick-access-menu-div'>
+              <Menu
+                mode="inline"
+                // theme="dark"
+                className='quick-access-menu'
+                // style = {{ width: 200 }}
+                // style={{ backgroundColor: "#001529" }}
+                items = {[
+                  {
+                    label: "Dashboard",
+                    key:"dashboard",
+                    icon: <AiFillHome size={21} />
+                  },
+                  {
+                    label: "Exchange",
+                    key:"exchange",
+                    icon: <RiExchangeFill size={21} />
+                  },
+                  {
+                    label: "My Wallet",
+                    key:"mywallet",
+                    icon: <SlWallet size={21} />
+                  },
+                  {
+                    label: "Tradeview",
+                    key:"tradeview",
+                    icon: <BsGraphUpArrow size={21} />
+                  },
+                ]}
+              >
 
-            </Menu>
+              </Menu>
+            </div>
           </div>
 
           <div className='service-container'>
             <h2>Service</h2>
             
-            <Menu
-              mode='inline'
-              // theme="dark"
-              className='service-menu'
-              // style={{ backgroundColor: "#001529" }}
-              items = {[
-                {
-                  label: "Transactions",
-                  tag: 3,
-                  key:"transactions",
-                  icon: <BsBank2 size={21}/> ,                  
-                  children: [
-                    {
-                      label: "Buy & Sell Coin",
-                      key: "buyandsellcoin",
-                    },
-                    {
-                      label: "Deposit Yen",
-                      key: "deposityen",
-                    },
-                    {
-                      label: "withdraw Yen",
-                      key: "withdrawyen",
-                    },
-                    {
-                      label: "Send Coin",
-                      key: "sendcoin",
-                    },
-                    {
-                      label: "Receive Coin",
-                      key: "receivecoin",
-                    },
-                    {
-                      label: "Deposit Coin",
-                      key: "depositcoin",
-                    },
-                  ]
-                },
-                {
-                  label: "Rewards",
-                  key: "rewards",
-                  icon: <FaGift size={21}/>,
-                  children: [
-                    {
-                      label: "Rewards",
-                      key: "reward",
-                    }
-                  ]
-                },
-                {
-                  label: "Utility Plan",
-                  key: "utilityplan",
-                  icon: <TbBulb size={21}/>,
-                  children: [
-                    {
-                      key: "plan",
-                      label: "Plan"
-                    }
-                  ]
-                }
-                
-              ]}
-            >
-            </Menu>
+            <div className='service-menu-div'>
+              <Menu
+                mode='inline'
+                // theme="dark"
+                className='service-menu'
+                // style={{ backgroundColor: "#001529" }}
+                items = {[
+                  {
+                    label: "Transactions",
+                    tag: 3,
+                    key:"transactions",
+                    icon: <BsBank2 size={21}/> ,                  
+                    children: [
+                      {
+                        label: "Buy & Sell Coin",
+                        key: "buyandsellcoin",
+                      },
+                      {
+                        label: "Deposit Yen",
+                        key: "deposityen",
+                      },
+                      {
+                        label: "withdraw Yen",
+                        key: "withdrawyen",
+                      },
+                      {
+                        label: "Send Coin",
+                        key: "sendcoin",
+                      },
+                      {
+                        label: "Receive Coin",
+                        key: "receivecoin",
+                      },
+                      {
+                        label: "Deposit Coin",
+                        key: "depositcoin",
+                      },
+                    ]
+                  },
+                  {
+                    label: "Rewards",
+                    key: "rewards",
+                    icon: <FaGift size={21}/>,
+                    children: [
+                      {
+                        label: "Rewards",
+                        key: "reward",
+                      }
+                    ]
+                  },
+                  {
+                    label: "Utility Plan",
+                    key: "utilityplan",
+                    icon: <TbBulb size={21}/>,
+                    children: [
+                      {
+                        key: "plan",
+                        label: "Plan"
+                      }
+                    ]
+                  }
+                  
+                ]}
+              >
+              </Menu>
+            </div>
    
           </div>
 
           <div className='account-container'>
               <h2>Account</h2>
-              <Menu
-              mode='inline'
-              // theme='dark'
-              className='account-menu'
-              // style={{ backgroundColor: "#001529" }}
-                items = {[
-                  {
-                    label: "Notification",
-                    key: "notification",
-                    icon: <HiOutlineSpeakerphone size={21} />
-                  },
-                  {
-                    label: "Settings",
-                    key: "settings",
-                    icon: <IoSettingsOutline size={21}/>
-                    ,
-                  },
-                  {
-                    label: "FAQ",
-                    key: "faq",
-                    icon: <FaRegQuestionCircle size={21}/>
-                  }
-                ]}
-              >
-              </Menu>
+              <div className='account-menu-div'>
+                <Menu
+                mode='inline'
+                // theme='dark'
+                className='account-menu'
+                // style={{ backgroundColor: "#001529" }}
+                  items = {[
+                    {
+                      label: "Notification",
+                      key: "notification",
+                      icon: <HiOutlineSpeakerphone size={21} />
+                    },
+                    {
+                      label: "Settings",
+                      key: "settings",
+                      icon: <IoSettingsOutline size={21}/>
+                      ,
+                    },
+                    {
+                      label: "FAQ",
+                      key: "faq",
+                      icon: <FaRegQuestionCircle size={21}/>
+                    }
+                  ]}
+                >
+                </Menu>
+              </div>
           </div>
 
           <div className='logout-container'>

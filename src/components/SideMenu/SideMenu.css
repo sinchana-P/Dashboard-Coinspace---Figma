@@ -69,6 +69,11 @@
   font-size: 16px;
   font-weight: lighter;
 }
+.quick-access-menu-div,
+.service-menu-div,
+.account-menu-div {
+  text-align: left;
+}
 .account-menu {
   background-color: #1F263E;
   color: #FFFFFF;
