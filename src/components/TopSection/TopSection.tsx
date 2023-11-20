@@ -1,3 +1,4 @@
+// import * as Line from "src\components\Line";
 import { Card } from 'antd'
 import './TopSection.css'
 
@@ -11,7 +12,14 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 
+// import Line from "./Line";
+
 export const TopSection = () => {
+
+  // const components = [
+  //   ["Line", Line]
+  // ];
+
   return (
     <div className='top-section-container-main'>
       <div className='welcome-icons-container'>
@@ -27,14 +35,13 @@ export const TopSection = () => {
         </div>
       </div>
 
-
+    
       <div className='top-section-container'>
 
       <div className='card-component'>
             <Card >
               <div>
-                <div className='top-card'>
-                  
+                <div className='top-card'>                  
                   <div className='top-card-each-col'>
                     <FaBitcoin size={20} style={{ color: "white", backgroundColor: "#FFC246", width: "30px", height: "30px", borderRadius: "50%", padding: "6px" }} />
                   </div>
@@ -50,8 +57,20 @@ export const TopSection = () => {
                 </div>
                 
                 <div>
+                  
                   <div>
-                      graph
+                    graph
+                    {/* {components.map(([label, Comp]) => {
+                      return (
+                        <div key={label + ""}>
+                          <h1>{label}</h1>
+                          <div>
+                            <Comp />
+                          </div>
+                        </div>
+                      );
+                    })} */}
+                    {/* <div style={{ height: "50rem" }} /> */}
                   </div>
                 </div>
               </div>
