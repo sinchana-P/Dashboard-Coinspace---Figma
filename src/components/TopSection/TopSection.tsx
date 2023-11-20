@@ -7,14 +7,26 @@ import { GoArrowDown } from "react-icons/go";
 import { FaEthereum } from "react-icons/fa";
 import { TbBrandNem } from "react-icons/tb";
 import { SiXrp } from "react-icons/si";
+import { HiOutlineSquares2X2 } from "react-icons/hi2";
+import { SlArrowRight } from "react-icons/sl";
+import { SlArrowLeft } from "react-icons/sl";
 
 export const TopSection = () => {
   return (
     <div className='top-section-container-main'>
-      <div className='welcome-container'>
-        <p>Welcome</p>
-        <p>Dashboard</p>
+      <div className='welcome-icons-container'>
+        <div className='welcome-container'>
+          <p>Welcome</p>
+          <p>Dashboard</p>
+        </div>
+
+        <div className='icons-container'>
+          <div className='icons-right squares'><HiOutlineSquares2X2 /></div>
+          <div className='icons-right arrow'><SlArrowLeft /></div>
+          <div className='icons-right arrow'><SlArrowRight /></div>
+        </div>
       </div>
+
 
       <div className='top-section-container'>
           {/* <Card className='card-component' className='top-card' style={{display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center"}}> */}
