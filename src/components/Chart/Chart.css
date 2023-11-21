@@ -103,6 +103,18 @@
   justify-content: space-between;
   font-size: 10px;
 }
+.bell-container {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: blue;
+  border-color: #0043FF;
+  text-align: center;
+  font-size: 14px;
+  padding-top: 2px;
+  border: 1px solid #190887;
+  margin-left: 3px;
+}
 .market-cap-div {
   max-height: 40px;
   display: flex;

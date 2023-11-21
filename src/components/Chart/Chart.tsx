@@ -10,6 +10,7 @@ import { TbArrowsDownUp } from "react-icons/tb";
 import { SiBitcoincash } from "react-icons/si";
 import { SiLitecoin } from "react-icons/si";
 import { TbCurrencyEthereum } from "react-icons/tb";
+import { FaBell } from "react-icons/fa6";
 
 import LineChart4 from '../LineChart4';
 
@@ -108,7 +109,10 @@ export const Chart = () => {
                   <div className='chart-sec-2-text price-alert'>
                     <p className='grey-font'>Price Alert</p>                  
                     <div>
-                      <GiRingingBell size={34} style={{color: "#130EAD"}} />
+                      {/* <GiRingingBell size={34} style={{color: "#130EAD"}} /> */}
+                      <div className='bell-container'>
+                        <FaBell />
+                      </div>
                     </div>
                   </div>
                   
