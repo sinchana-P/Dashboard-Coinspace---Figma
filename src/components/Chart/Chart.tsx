@@ -11,9 +11,44 @@ import { SiBitcoincash } from "react-icons/si";
 import { SiLitecoin } from "react-icons/si";
 import { TbCurrencyEthereum } from "react-icons/tb";
 
+import LineChart4 from '../LineChart4';
+
 import './Chart.less'
+// import CandlestickChart from '../CandlestickChart';
 
 export const Chart = () => {
+
+  const chartData = {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
+    datasets: [
+      {
+        label: 'Monthly Sales',
+        data: [65, 59, 80, 81, 56, 71, 33, 31],
+        fill: true,
+        backgroundColor: '#ABDA93',
+        borderColor: '#ABC246',
+        tension: 0.4, // Adjust the tension for a smooth curve
+      },
+    ],
+  };
+
+  // const candlestickData = {
+  //   labels: ['January', 'February', 'March', 'April', 'May'],
+  //   datasets: [
+  //     {
+  //       label: 'Candlestick Chart',
+  //       data: [
+  //         { t: 0, o: 62, h: 84, l: 59, c: 72 },
+  //         { t: 1, o: 70, h: 90, l: 62, c: 80 },
+  //         { t: 2, o: 74, h: 86, l: 60, c: 78 },
+  //         { t: 3, o: 78, h: 88, l: 66, c: 82 },
+  //         { t: 4, o: 82, h: 94, l: 70, c: 90 },
+  //       ],
+  //     },
+  //   ],
+  // };
+
+
   return (
     <Layout >
                 
@@ -77,6 +112,11 @@ export const Chart = () => {
                     </div>
                   </div>
                   
+                </div>
+
+                <div style={{ width: '100%', minHeight: '302px' }} className='big-chart-container'>
+                    <LineChart4 data={chartData} />
+                  {/* <CandlestickChart data={candlestickData} /> */}
                 </div>
               
             </Card>
