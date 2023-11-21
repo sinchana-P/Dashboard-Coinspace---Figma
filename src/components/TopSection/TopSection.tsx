@@ -39,7 +39,49 @@ export const TopSection = () => {
           //   'rgba(229, 216, 189, 0.2)',
           // ],          // backgroundColor: '#EEA241', // Change the fill color
           // borderColor: 'rgb(75, 192, 192)',
-          borderColor: 'orange',
+          borderColor: '#FFC246',
+          tension: 0.4, // Adjust the tension for a smooth curve
+        },
+      ],
+    };
+
+    const chartData2 = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
+      datasets: [
+        {
+          label: 'Monthly Sales',
+          data: [35, 63, 80, 81, 53, 71, 33, 31],
+          fill: true,
+          backgroundColor: '#8DA9F1',
+          borderColor: '#5470DE',
+          tension: 0.4, // Adjust the tension for a smooth curve
+        },
+      ],
+    };
+
+    const chartData3 = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
+      datasets: [
+        {
+          label: 'Monthly Sales',
+          data: [95, 59, 40, 81, 56, 71, 33, 31],
+          fill: true,
+          backgroundColor: '#47DFCF',
+          borderColor: '#07BEAA',
+          tension: 0.4, // Adjust the tension for a smooth curve
+        },
+      ],
+    };
+
+    const chartData4 = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
+      datasets: [
+        {
+          label: 'Monthly Sales',
+          data: [25, 61, 40, 81, 49, 31, 23, 31],
+          fill: true,
+          backgroundColor: '#93D7FD',
+          borderColor: '#0D99E6',
           tension: 0.4, // Adjust the tension for a smooth curve
         },
       ],
@@ -123,8 +165,8 @@ export const TopSection = () => {
                 </div>
                 
                 <div>
-                  <div>
-                      graph
+                  <div style={{ width: '100%', height: '100px' }}>
+                    <LineChart3 data={chartData2} />
                   </div>
                 </div>
 
@@ -150,8 +192,8 @@ export const TopSection = () => {
                 </div> 
 
                 <div>
-                  <div>
-                      graph
+                  <div style={{ width: '100%', height: '100px' }}>
+                    <LineChart3 data={chartData3} />
                   </div>
                 </div>   
 
@@ -178,9 +220,9 @@ export const TopSection = () => {
               </div> 
 
               <div>
-                <div>
-                    graph
-                </div>
+                  <div style={{ width: '100%', height: '100px' }}>
+                    <LineChart3 data={chartData4} />
+                  </div>
               </div>          
             </Card>
           </div>
