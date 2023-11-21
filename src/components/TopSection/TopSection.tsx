@@ -12,6 +12,8 @@ import { HiOutlineSquares2X2 } from "react-icons/hi2";
 import { SlArrowRight } from "react-icons/sl";
 import { SlArrowLeft } from "react-icons/sl";
 
+import LineChart3 from '../LineChart3';
+
 // import Line from "./Line";
 
 export const TopSection = () => {
@@ -19,6 +21,29 @@ export const TopSection = () => {
   // const components = [
   //   ["Line", Line]
   // ];
+
+    // Example data
+    const chartData = {
+      labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August'],
+      datasets: [
+        {
+          label: 'Monthly Sales',
+          data: [65, 59, 80, 81, 56, 71, 33, 31],
+          fill: true,
+          backgroundColor: '#FFDA93',
+          // backgroundColor: [
+          //   'rgba(255, 194, 70, 0.2)',
+          //   'rgba(249, 200, 102, 0.2)',
+          //   'rgba(242, 206, 132, 0.2)',
+          //   'rgba(236, 211, 161, 0.2)',
+          //   'rgba(229, 216, 189, 0.2)',
+          // ],          // backgroundColor: '#EEA241', // Change the fill color
+          // borderColor: 'rgb(75, 192, 192)',
+          borderColor: 'orange',
+          tension: 0.4, // Adjust the tension for a smooth curve
+        },
+      ],
+    };
 
   return (
     <div className='top-section-container-main'>
@@ -58,8 +83,8 @@ export const TopSection = () => {
                 
                 <div>
                   
-                  <div>
-                    graph
+                  <div style={{ width: '100%', height: '100px' }}>
+                    <LineChart3 data={chartData} />
                     {/* {components.map(([label, Comp]) => {
                       return (
                         <div key={label + ""}>
