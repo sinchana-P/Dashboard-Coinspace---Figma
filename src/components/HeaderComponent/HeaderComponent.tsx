@@ -32,7 +32,7 @@ export const HeaderComponent = () => {
           </div>
           <div className="header-icons">
             <Badge count={5} color='#F56C89'>
-              <HiOutlineSpeakerphone size={24} badge={{ count: 5 }} />
+              <HiOutlineSpeakerphone size={24} />
             </Badge>
           </div>
           <div className="header-icons">
