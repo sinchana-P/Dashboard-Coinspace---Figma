@@ -101,7 +101,6 @@ export const TopSection = () => {
           <div className='icons-right arrow'><SlArrowRight /></div>
         </div>
       </div>
-
     
       <div className='top-section-container'>
 
